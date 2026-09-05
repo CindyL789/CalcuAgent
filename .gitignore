@@ -175,33 +175,24 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# shared folder
+# --------------------------------------------------------------------------- #
+# Project-specific
+#
+# docs/, tests/ and runs/ were ignored here, inherited from a project template.
+# They are the package's own work - the authoritative docs/DESIGN.md and the
+# whole test suite - so they are tracked deliberately. Do not re-add them.
+# --------------------------------------------------------------------------- #
+
+# scratch and machine-local
 shared/
-_templ.py
-_templ_*.py
-
-_templ.ipynb
-_templ_*.ipynb
-
+.vscode/
+.DS_Store
 *.sh
 *.command
 *.db
-.DS_Store
 
-__pycache__/
-*.pyc
-.env
-venv/
-*.log
-.vscode/
-assets/
-data/
-docs/
-reports/
-output/
-tests/
-runs/
-shared/
+# template scaffolding: kept on disk, not tracked
 _templ.py
 _templ_*.py
-*_data_*.py
+_templ.ipynb
+_templ_*.ipynb
